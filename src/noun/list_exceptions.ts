@@ -351,7 +351,7 @@ const plural2singular = <NounConversionObject>{};
 
 // build from the other list
 for (let entry in singular2plural) {
-	if (!singular2plural.hasOwnProperty(entry)) continue;
+	if (!Object.prototype.hasOwnProperty.call(singular2plural, entry)) continue;
 	singular2plural[entry].forEach(x => plural2singular[x] = [entry]);
 }
 

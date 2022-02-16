@@ -46,7 +46,7 @@ export default [
 
 	// all other cases
 	{
-		test: (str: string) => true,
+		test: () => true,
 		comp: (str: string) => str + "er",
 		supr: (str: string) => str + "est",
 	}

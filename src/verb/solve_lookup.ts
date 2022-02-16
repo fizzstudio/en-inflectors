@@ -616,9 +616,9 @@ const lookup = function (input: string): Array<string> {
 	return VBP[input] || VBD[input] || VBN[input] || VBZ[input] || VBG[input] || [];
 };
 
-const conjugate = function (input: string, direction: string): string {
+/*const conjugate = function (input: string, direction: string): string {
 	const index = ["VBP", "VBD", "VBN", "VBZ", "VBG"];
 	return lookup(input)[index.indexOf(direction)];
-};
+};*/
 
 export { VBP, VBD, VBN, VBZ, VBG, lookup };

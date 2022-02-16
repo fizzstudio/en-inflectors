@@ -1,30 +1,49 @@
 {
-  "name": "en-inflectors",
+  "name": "@fizz/en-inflectors",
   "version": "1.0.12",
   "description": "English Inflectors Library For noun (plural to singular and singular to plural), verb (gerund, present & past) and adjective (comparative, superlative) transformations",
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://npm.fizz.studio"
+  },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "module": "dist/en-inflectors.esm.js",
   "dependencies": {
-    "en-stemmer": "^1.0.2"
+    "@fizz/en-stemmer": "^1.0.2"
   },
   "devDependencies": {
     "@types/mocha": "^2.2.39",
-    "@types/node": "^7.0.5",
-    "ts-node": "^2.1.0"
+    "@types/node": "^7.0.7",
+    "ts-node": "^2.1.0",
+    "typescript": "^4.5.5",
+    "rollup": "^2.60.0",
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "@rollup/plugin-eslint": "^8.0.1",
+    "eslint": "^8.3.0",
+    "jsdoc": "^3.6.7",
+    "kis-jsdoc-plugin": "^1.4.9",
+    "rimraf": "^3.0.2"
   },
   "scripts": {
-    "test": "mocha",
-    "build": "tsc",
-    "prepublish":"mocha && tsc"
+    "tsc": "tsc",
+    "build": "tsc && rollup -c",
+    "dev": "tsc && rollup -c -w",
+    "test": "node test/test.js",
+    "pretest": "npm run build",
+    "doc": "rimraf ./docs/* && jsdoc -c .jsdoc/.jsdoc.html.json && jsdoc -c .jsdoc/.jsdoc.md.json",
+    "pubpatch": "npm version patch && npm publish",
+    "pubminor": "npm version minor && npm publish",
+    "pubmajor": "npm version major && npm publish"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/finnlp/en-inflectors.git"
+    "url": "git+https://github.com/fizzstudio/en-inflectors.git"
   },
   "author": "Alex Corvi <alex@arrayy.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/finnlp/en-inflectors/issues"
+    "url": "https://github.com/fizzstudio/en-inflectors/issues"
   },
-  "homepage": "https://github.com/finnlp/en-inflectors#readme"
+  "homepage": "https://github.com/fizzstudio/en-inflectors#readme"
 }
