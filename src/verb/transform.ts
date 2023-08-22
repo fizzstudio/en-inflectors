@@ -1,7 +1,7 @@
-import * as list from "./solve_lookup";
-import * as regex from "./solve_regex";
-import * as trySimilar from "./try_similar";
-import tryPresnt from "./try_present";
+import * as list from "./solve_lookup.js";
+import * as regex from "./solve_regex.js";
+import * as trySimilar from "./try_similar.js";
+import tryPresnt from "./try_present.js";
 
 
 const index = ["VBP", "VBD", "VBN", "VBZ", "VBG"];

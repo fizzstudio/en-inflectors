@@ -1,6 +1,6 @@
-import * as countableDetection from "./detect_countable";
-import * as patternReconginition from "./regexps_detection";
-import * as exceptions from "./list_exceptions";
+import * as countableDetection from "./detect_countable.js";
+import * as patternReconginition from "./regexps_detection.js";
+import * as exceptions from "./list_exceptions.js";
 
 function isSingular(input: string): Boolean {
 	input = input.split(/\W/)[0].toLowerCase().trim();

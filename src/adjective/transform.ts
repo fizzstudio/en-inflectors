@@ -1,5 +1,5 @@
-import rules from "./regexp_rules";
-import { irregulars as irregulars } from "./list_irregulars";
+import rules from "./regexp_rules.js";
+import { irregulars as irregulars } from "./list_irregulars.js";
 
 
 /**

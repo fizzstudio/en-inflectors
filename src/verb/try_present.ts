@@ -1,6 +1,6 @@
 import * as porter from "@fizz/en-stemmer";
 
-import * as list from "./solve_lookup";
+import * as list from "./solve_lookup.js";
 
 export default function (verb: string): string {
 	// Gerunds

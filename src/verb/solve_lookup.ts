@@ -1,4 +1,4 @@
-import { solve as solveFromRegexes } from "./solve_regex";
+import { solve as solveFromRegexes } from "./solve_regex.js";
 
 export const irregular = [
 	["abhor", "abhorred", "abhorred", "abhors", "abhorring"],

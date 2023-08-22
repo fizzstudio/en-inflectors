@@ -1,4 +1,4 @@
-import nonCountables from "./list_uncountable";
+import nonCountables from "./list_uncountable.js";
 
 function isCountable(input: string): Boolean {
 	return !~nonCountables.indexOf(input);

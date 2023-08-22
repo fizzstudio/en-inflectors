@@ -1,10 +1,10 @@
-import * as adjective from "./adjective/transform";
-import * as verb from "./verb/transform";
-import * as noun from "./noun/transform";
-import * as nounDetection from "./noun/detect_singular_plural";
-import * as countableDetection from "./noun/detect_countable";
-import * as verbsList from "./verb/solve_lookup";
-import nonCountables from "./noun/list_uncountable";
+import * as adjective from "./adjective/transform.js";
+import * as verb from "./verb/transform.js";
+import * as noun from "./noun/transform.js";
+import * as nounDetection from "./noun/detect_singular_plural.js";
+import * as countableDetection from "./noun/detect_countable.js";
+import * as verbsList from "./verb/solve_lookup.js";
+import nonCountables from "./noun/list_uncountable.js";
 
 export class Inflectors {
 	

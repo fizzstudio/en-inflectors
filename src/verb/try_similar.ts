@@ -1,4 +1,4 @@
-import * as list from "./solve_lookup";
+import * as list from "./solve_lookup.js";
 
 
 /**

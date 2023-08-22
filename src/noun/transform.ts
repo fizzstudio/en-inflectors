@@ -1,6 +1,6 @@
-import * as detector from "./detect_singular_plural";
-import * as excpetions from "./list_exceptions";
-import * as transformationPatterns from "./regexps_transformation";
+import * as detector from "./detect_singular_plural.js";
+import * as excpetions from "./list_exceptions.js";
+import * as transformationPatterns from "./regexps_transformation.js";
 
 export const toPlural = function(input:string):string{
 	if(detector.isPlural(input)) return input;
