@@ -10,6 +10,7 @@ export default [
       name: pkg.name,
       file: pkg.module,
     },
+    external: ['@fizz/en-stemmer'],
     plugins: [
       resolve(), // so Rollup can find external modules
       //eslint({ 
