@@ -1,6 +1,6 @@
 import pkg from './package.json';
 import resolve from '@rollup/plugin-node-resolve';
-import eslint from '@rollup/plugin-eslint'; 
+//import eslint from '@rollup/plugin-eslint'; 
 
 export default [
   {
@@ -12,10 +12,10 @@ export default [
     },
     plugins: [
       resolve(), // so Rollup can find external modules
-      eslint({ 
-        exclude: ['./node_modules/**', './src/style/**'], 
-        fix: true,
-      }),
+      //eslint({ 
+      //  exclude: ['./node_modules/**', './src/style/**'], 
+      //  fix: true,
+      //}),
     ],
   },
 ];
